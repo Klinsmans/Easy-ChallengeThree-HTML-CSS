@@ -1,0 +1,12 @@
+@import "./_variaveis.scss";
+@import "./reset";
+
+body {
+  background: url(../images/bg-mobile.svg);
+  background-color: $primaryColor;
+
+  @media screen and (min-width: $desktop) {
+    background: url(../images/bg-desktop.svg);
+    background-color: $primaryColor;
+  }
+}
