@@ -139,3 +139,43 @@ body {
     background-color: hsl(257deg, 40%, 49%);
   }
 }
+
+main {
+  display: grid;
+  align-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1279px) {
+  main {
+    display: grid;
+    align-items: start;
+    align-content: start;
+  }
+}
+
+.section-img {
+  width: 80vw;
+  justify-self: center;
+}
+@media screen and (min-width: 1279px) {
+  .section-img {
+    width: 80%;
+  }
+}
+
+.main-img {
+  width: 80vw;
+}
+@media screen and (min-width: 1279px) {
+  .main-img {
+    width: 50%;
+  }
+}
+
+.section-text {
+  width: 80vw;
+  justify-self: center;
+}
+section {
+  grid-auto-columns: auto;
+}

@@ -10,3 +10,41 @@ body {
     background-color: $primaryColor;
   }
 }
+
+main {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    align-items: start;
+    align-content: start;
+  }
+}
+
+.section-img {
+  width: 80vw;
+  justify-self: center;
+  @media screen and (min-width: $desktop) {
+    width: 80%;
+  }
+}
+
+.main-img {
+  width: 80vw;
+  @media screen and (min-width: $desktop) {
+    width: 50%;
+  }
+}
+
+.section-text {
+  width: 80vw;
+  justify-self: center;
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+section {
+  grid-auto-columns: auto;
+}
